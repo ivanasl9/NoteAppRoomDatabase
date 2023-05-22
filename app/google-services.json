@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "544752382825",
+    "project_id": "noteapproomdatabase",
+    "storage_bucket": "noteapproomdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544752382825:android:362c112679088ba9c2c3f8",
+        "android_client_info": {
+          "package_name": "com.example.noteapproomdatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544752382825-p4klc17ppsb2ldpfvbpdm6dc96ffnqfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcVTnWbg-3OvNxOWverLxmTpmVyOovzt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544752382825-p4klc17ppsb2ldpfvbpdm6dc96ffnqfv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

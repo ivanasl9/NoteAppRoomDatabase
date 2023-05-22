@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".EditNoteActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#4DFFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/ed2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.796">
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/ed1"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:autofillHints="enter note title"
+            android:backgroundTint="@color/black"
+            android:hint="@string/enter_note_title"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/ed2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.796" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:autofillHints="enter description"
+            android:backgroundTint="#36000000"
+            android:gravity="start|top"
+            android:hint="@string/enter_note_description"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:autofillHints="enter description"
+            android:backgroundTint="@color/black"
+            android:gravity="start|top"
+            android:hint="@string/enter_note_description"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addUpdatebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/saveUpdateNote"
+            android:src="@drawable/baseline_save_24"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.864"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
